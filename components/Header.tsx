@@ -31,10 +31,10 @@ export default function Header({ onClearChat }: HeaderProps) {
       <button
         onClick={onClearChat}
         style={{
-          color: 'red',
+          color: 'white',
           fontWeight: 'bold',
           fontSize: 16,
-          background: 'white',
+          background: 'black',
           borderRadius: '24px',
           padding: '8px 24px',
           border: 'none',

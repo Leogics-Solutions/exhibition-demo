@@ -153,18 +153,18 @@ export default function ChatInput({
           />
           <button
             type="submit"
-            disabled={isUploading}
+            disabled={isUploading || input.trim() === ''}
             className="w-10 h-10 rounded-full text-white transition-colors flex-shrink-0 disabled:opacity-50 flex items-center justify-center"
             style={{
               backgroundColor: COLORS.primary,
             }}
             onMouseEnter={(e) => {
-              if (!isUploading) {
+              if (!isUploading && input.trim() !== '') {
                 e.currentTarget.style.backgroundColor = COLORS.primaryDark;
               }
             }}
             onMouseLeave={(e) => {
-              if (!isUploading) {
+              if (!isUploading && input.trim() !== '') {
                 e.currentTarget.style.backgroundColor = COLORS.primary;
               }
             }}
