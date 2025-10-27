@@ -26,7 +26,7 @@ export default function Header({ onClearChat }: HeaderProps) {
         display: 'inline-block',
         margin: 0
       }}>
-        Scamurai
+        Scamurai.ai
       </h1>
       <button
         onClick={onClearChat}
