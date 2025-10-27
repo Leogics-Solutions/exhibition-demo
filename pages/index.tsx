@@ -218,9 +218,12 @@ export default function Home() {
       {messages.length === 0 ? (
         // Empty state - centered layout
         <div className="flex-1 flex flex-col items-center justify-center px-4">
-          <h1 className="text-4xl font-bold mb-8" style={{ color: "#111827" }}>
+          <h1 className="text-4xl font-bold mb-2" style={{ color: "#111827" }}>
             Stay protected with Scamurai
           </h1>
+          <p className="text-lg text-gray-600 mb-8">
+            an Anti Scam Assistant for Enterprise
+          </p>
           <div className="w-full max-w-2xl">
             <ChatInput
               input={input}
